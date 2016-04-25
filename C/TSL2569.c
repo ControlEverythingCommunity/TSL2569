@@ -36,7 +36,7 @@ void main()
 	write(file, config, 2);
 	sleep(1);
 
-	// Read 4 bytes of data(0x0C | 0x80)
+	// Read 4 bytes of data from register(0x0C | 0x80)
 	// ch0 lsb, ch0 msb, ch1 lsb, ch1 msb
 	char reg[1] = {0x0C | 0x80};
 	write(file, reg, 1);
